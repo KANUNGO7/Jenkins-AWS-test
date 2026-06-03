@@ -1,4 +1,4 @@
-pipeline{{
+pipeline{
     agent any
 
     stgaes{
@@ -23,4 +23,4 @@ pipeline{{
             }
          }
     }
-}}
+}
