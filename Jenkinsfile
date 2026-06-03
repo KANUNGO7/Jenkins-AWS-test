@@ -1,23 +1,23 @@
 pipeline{
     agent any
 
-    stgaes{
-        stage(checkout){
+    stages{
+        stage('checkout'){
             steps{
                 echo "Checking out code from GitHub"
     }
         }
-        stage(build){
+        stage('build'){
             steps{
                 echo "Building the application"
             }
         }
-        stage(test){
+        stage('test'){
             steps{
                 echo "Running tests"
             }
         }
-         stage(deploy){
+         stage('deploy'){
             steps{
                 echo "Deploying to AWS"
             }
